@@ -24,7 +24,11 @@ export default class ItemPage extends React.Component {
     render() {
         if (this.state.product) {
             return (
-                <DisplayInformation key={this.state.product.itemId} title={this.state.product.title}/>
+                <DisplayInformation 
+                    key={this.state.product.itemId} 
+                    title={this.state.product.title}
+                    images={this.state.product.Images[0]}
+                />
             )
         } else {
             return <div></div>

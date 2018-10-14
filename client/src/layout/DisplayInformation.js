@@ -9,7 +9,7 @@ export default class DisplayInformation extends React.Component {
         return (
             <div className="DisplayInformation">
                 <ProductName title={this.props.title} />
-                <ImageViewer images={this.props.Images[0]} />
+                <ImageViewer images={this.props.images} title={this.props.title} />
             </div>
         )
     }
