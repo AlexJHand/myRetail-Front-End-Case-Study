@@ -1,6 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 
+import DisplayInformation from '../layout/DisplayInformation';
+
 export default class ItemPage extends React.Component {
     constructor(props) {
         super(props);
@@ -20,8 +22,13 @@ export default class ItemPage extends React.Component {
     }
 
     render() {
-        return (
-            <div></div>
-        )
+        if (this.state.product) {
+            return (
+                <DisplayInformation key={this.state.product.itemId} title={this.state.product.title}/>
+            )
+        } else {
+            return <div></div>
+        }
+        
     }
 }
