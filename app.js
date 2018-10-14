@@ -9,6 +9,7 @@ const port = process.env.PORT || 4501;
 
 // Require Routers
 const indexRouter = require('./routes/index.router');
+const productsRouter = require('./routes/product.router');
 
 // Middleware
 app.use(express.static('./client/build'));
@@ -16,6 +17,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Use Routers
+app.use('/products', productsRouter);
 app.use('/', indexRouter);
 
 // Listener
