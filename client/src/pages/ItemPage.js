@@ -6,8 +6,17 @@ export default class ItemPage extends React.Component {
         super(props);
 
         this.state = {
-
+            product: null
         }
+
+        
+    }
+
+    componentDidMount() {
+        console.log("In componentDidMount");
+        axios(`/products`)
+            .then(product => this.setState({product: product.data.CatalogEntryView[0]}))
+            .catch(error => error)
     }
 
     render() {

@@ -6,7 +6,7 @@ const product = require('../products/item-data.json');
 // Server-side get call
 router.get('/', function(req, res) {
     console.log("In product router");
-    res.sendStatus(200).send(product);
+    res.send(product);
 });
 
 // Export
