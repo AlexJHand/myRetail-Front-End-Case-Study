@@ -4,6 +4,7 @@ import axios from 'axios';
 import DisplayInformation from '../layout/DisplayInformation';
 import ProductInformation from '../layout/ProductInformation';
 import PurchaseInformation from '../layout/PurchaseInformation';
+import Reviews from '../layout/Reviews';
 
 export default class ItemPage extends React.Component {
     constructor(props) {
@@ -39,6 +40,12 @@ export default class ItemPage extends React.Component {
                     />
                     <ProductInformation 
                         features={this.state.product.ItemDescription[0].features}
+                    />
+                    <Reviews 
+                        overallScore={this.state.product.CustomerReview[0].consolidatedOverallRating}
+                        totalReviews={this.state.product.CustomerReview[0].totalReviews}
+                        pro={this.state.product.CustomerReview[0].Pro[0]}
+                        con={this.state.product.CustomerReview[0].Con[0]}
                     />
                 </div>
             )
