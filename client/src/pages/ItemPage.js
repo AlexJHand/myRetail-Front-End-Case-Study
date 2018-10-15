@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 
 import DisplayInformation from '../layout/DisplayInformation';
+import ProductInformation from '../layout/ProductInformation';
 import PurchaseInformation from '../layout/PurchaseInformation';
 
 export default class ItemPage extends React.Component {
@@ -35,6 +36,9 @@ export default class ItemPage extends React.Component {
                         price={this.state.product.Offers[0].OfferPrice[0]}
                         promotions={this.state.product.Promotions}
                         returns={this.state.product.ReturnPolicy[0].legalCopy}
+                    />
+                    <ProductInformation 
+                        features={this.state.product.ItemDescription[0].features}
                     />
                 </div>
             )
