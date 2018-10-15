@@ -3,11 +3,11 @@ import React from 'react';
 const ReviewsHeader = (props) => 
     <div className="reviewsHeader">
         <div className="reviewsOverallScore">
-            <span className="reviewsOverallStars"></span>
+            <span className="reviewsOverallStars">{props.buildStars(props.totalStars)}</span>
             <span className="reviewsOverallText">overall</span>
         </div>
         <div className="reviewsTotal">
-            view all <span></span> reviews
+            view all <span>{props.totalReviews}</span> reviews
         </div>
     </div>
 

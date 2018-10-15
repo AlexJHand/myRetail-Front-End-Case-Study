@@ -98,8 +98,18 @@ export default class Reviews extends React.Component {
     render() {
         return (
             <div className="reviews">
-                <ReviewsHeader />
-                <ReviewsBox />
+                <ReviewsHeader 
+                    buildStars={this.createStars} 
+                    totalStars={this.state.totalStars} 
+                    totalReviews={this.props.totalReviews}
+                />
+                <ReviewsBox 
+                    buildStars={this.createStars}
+                    proStars={this.state.proStars}
+                    conStars={this.state.conStars}
+                    proReview={this.props.pro}
+                    conReview={this.props.con}
+                />
             </div>
         )
     }
