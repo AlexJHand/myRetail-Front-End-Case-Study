@@ -1,6 +1,7 @@
 /* 
   Gray color: #BEBEBE
-
+  Light Gray color: #FAFAFA
+  Red color: #C33A1D
 */
 
 .App {
@@ -20,12 +21,20 @@
   height: 100%;
 }
 
+/* 
+//////////////////////////
+DisplayInformation Section
+//////////////////////////
+*/
+
 .displayInformation {
-  width: 40%;
-  margin: 5%;
+  width: 38%;
+  /* margin: 5%; */
+  margin-left: 2%;
   padding: 5%;
-  /* background-color: tomato; */
+  /* background-color: green; */
   text-align: center;
+  float: left;
 }
 
 .productName {
@@ -92,4 +101,85 @@
   height: auto;
 }
 
+/* 
+//////////////////////////
+PurchaseInformation Section
+//////////////////////////
+*/
 
+.purchaseInformation {
+  width: 38%;
+  /* margin: 5%; */
+  margin-right: 2%;
+  padding: 5%;
+  /* background-color: tomato; */
+  text-align: center;
+  float: right;
+  padding-top: 5em;
+}
+
+.priceBox {
+  width: 50%;
+  height: 3em;
+  display: flex;
+  text-align: center;
+  /* align-items: baseline; */
+  /* background-color: tomato; */
+}
+
+.priceNumber {
+  font-size: 1.9em;
+  align-self: center;
+}
+
+.priceQualifier {
+  font-size: .8em;
+  margin-left: 1.2em;
+  padding-bottom: .8em;
+  align-self: flex-end;
+}
+
+.promotions {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: #C33A1D;
+  line-height: 1.5em;
+}
+
+.promotion {
+  text-align: left;
+}
+
+.promotionsIcon {
+  margin-right: 1em;
+}
+
+.quantityBox {
+  width: 48%;
+  height: 1.5em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  color: #BEBEBE;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: .5em;
+  border: .1em solid #BEBEBE;
+  /* background-color: tomato; */
+}
+
+.quantityCounter {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 1.6em;
+}
+
+.quantityNumber {
+  color: #000000;
+  margin-left: .5em;
+  margin-right: .5em;
+  font-size: .7em;
+}
