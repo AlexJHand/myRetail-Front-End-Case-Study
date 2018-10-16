@@ -1,14 +1,31 @@
 import React from 'react';
 
-const TopReview = (props) =>
-    <div className="topReview">
-        <div className="topReviewStars">{props.buildStars(props.proStars)}</div>
-        <div className="topReviewTitle">{props.review.title}</div>
-        <div className="topReviewText">{props.review.review}</div>
-        <div className="topReviewSignature">
-            <span className="screenName">{props.review.screenName} </span>
-            {props.review.datePosted}
-        </div>
-    </div>
+export default class TopReview extends React.Component {
+    constructor(props) {
+        super(props);
 
-export default TopReview;
+        this.convertTime = this.convertTime.bind(this);
+    }
+
+    convertTime() {
+        const date = this.props.review.datePosted;
+        let dateObj = new Date(Date.parse(date));
+        let convertedDate = dateObj.toDateString();
+        return convertedDate
+    }
+
+    render() {
+        return (
+            <div className="topReview">
+                <div className="topReviewStars">{this.props.buildStars(this.props.proStars)}</div>
+                <div className="topReviewTitle">{this.props.review.title}</div>
+                <div className="topReviewText">{this.props.review.review}</div>
+                <div className="topReviewSignature">
+                    <span className="screenName">{this.props.review.screenName} </span>
+                    {this.convertTime()}
+                </div>
+            </div>
+
+        )
+    }
+}
