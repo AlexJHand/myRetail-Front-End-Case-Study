@@ -11,7 +11,36 @@ export default class PurchaseInformation extends React.Component {
         this.state = {
             quantity: 1
         }
+        this.displayButtons = this.displayButtons.bind(this);
         this.handleChange = this.handleChange.bind(this);
+    }
+
+    displayButtons() {
+        switch (this.props.purchasingChannelCode) {
+            case("0"):
+                return (
+                    <div className="buyButtons">
+                        <button type="button" className="inStoreBtn">Pick Up In Store</button>
+                        <button type="button" className="cartBtn">Add To Cart</button>
+                    </div>
+                )
+            case("1"):
+                return (
+                    <div className="buyButtons">
+                        <button type="button" className="cartBtn">Add To Cart</button>
+                    </div>
+                )
+            case("2"):
+                return (
+                    <div className="buyButtons">
+                        <button type="button" className="inStoreBtn">Pick Up In Store</button>
+                    </div>
+                )
+            default:
+                return (
+                    <div className="buyButtons"></div>
+                )
+        }
     }
 
     handleChange(change) {
@@ -40,8 +69,7 @@ export default class PurchaseInformation extends React.Component {
                 </div>
                 <hr />
                 <QuantityBox quantity={this.state.quantity} onClick={this.handleChange} />
-                <button type="button" className="inStoreBtn">Pick Up In Store</button>
-                <button type="button" className="cartBtn">Add To Cart</button>
+                {this.displayButtons()}
                 <Returns />
                 <button type="button" className="registryBtn">Add To Registry</button>
                 <button type="button" className="listBtn">Add To List</button>

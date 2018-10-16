@@ -36,6 +36,7 @@ export default class ItemPage extends React.Component {
                     <PurchaseInformation 
                         price={this.state.product.Offers[0].OfferPrice[0]}
                         promotions={this.state.product.Promotions}
+                        purchasingChannelCode={this.state.product.purchasingChannelCode}
                         returns={this.state.product.ReturnPolicy[0].legalCopy}
                     />
                     <ProductInformation 
