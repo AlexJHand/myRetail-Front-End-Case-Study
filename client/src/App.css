@@ -67,4 +67,29 @@
   padding-left: .5em;
 }
 
+.imageCarousel {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* background-color: green; */
+  margin: auto;
+}
+
+.carouselItem {
+  width: 20%;
+  height: 20%;
+}
+
+.carouselDirection {
+  font-size: 2.8em;
+  font-weight: 500;
+}
+
+.subImage {
+  width: 100%;
+  height: auto;
+}
+
 
