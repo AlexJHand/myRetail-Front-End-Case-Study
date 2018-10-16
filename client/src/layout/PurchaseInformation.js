@@ -19,26 +19,31 @@ export default class PurchaseInformation extends React.Component {
         switch (this.props.purchasingChannelCode) {
             case("0"):
                 return (
-                    <div className="buyButtons">
-                        <button type="button" className="inStoreBtn">Pick Up In Store</button>
-                        <button type="button" className="cartBtn">Add To Cart</button>
+                    <div className="buyButtonsBox">
+                        <div className="buttonWrapper">
+                            <button type="button" className="buyButton inStoreBtn">PICK UP IN STORE</button>
+                            <p className="inStore">find in a store</p>
+                        </div>
+                        <div className="buttonWrapper">
+                            <button type="button" className="buyButton cartBtn">ADD TO CART</button>
+                        </div>
                     </div>
                 )
             case("1"):
                 return (
-                    <div className="buyButtons">
-                        <button type="button" className="cartBtn">Add To Cart</button>
+                    <div className="buyButtonsBox">
+                        <button type="button" className="buyButton cartBtn">ADD TO CART</button>
                     </div>
                 )
             case("2"):
                 return (
-                    <div className="buyButtons">
-                        <button type="button" className="inStoreBtn">Pick Up In Store</button>
+                    <div className="buyButtonsBox">
+                        <button type="button" className="buyButton inStoreBtn">PICK UP IN STORE</button>
                     </div>
                 )
             default:
                 return (
-                    <div className="buyButtons"></div>
+                    <div className="buyButtonsBox"></div>
                 )
         }
     }

@@ -31,7 +31,7 @@ DisplayInformation Section
   width: 38%;
   /* margin: 5%; */
   margin-left: 2%;
-  padding: 5%;
+  padding: 3%;
   /* background-color: green; */
   text-align: center;
   float: left;
@@ -108,12 +108,14 @@ PurchaseInformation Section
 */
 
 .purchaseInformation {
-  width: 38%;
+  /* width: 38%; */
+  width: 47%;
   /* margin: 5%; */
   margin-right: 2%;
-  padding: 5%;
+  /* padding: 5%; */
+  padding: 2%;
   /* background-color: tomato; */
-  text-align: center;
+  /* text-align: center; */
   float: right;
   padding-top: 5em;
 }
@@ -165,7 +167,7 @@ PurchaseInformation Section
   align-items: center;
   justify-content: space-between;
   padding: .5em;
-  border: .1em solid #BEBEBE;
+  border: .01em solid #BEBEBE;
   /* background-color: tomato; */
 }
 
@@ -182,4 +184,68 @@ PurchaseInformation Section
   margin-left: .5em;
   margin-right: .5em;
   font-size: .7em;
+}
+
+.buyButtonsBox {
+  width: 100%;
+  height: 5em;
+  margin-bottom: 2em;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  justify-content: space-between;
+  /* align-items: center; */
+  align-items: flex-start;
+  /* background-color: tomato; */
+}
+
+.buttonWrapper {
+  width: 48%;
+  height: 5.5em;
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+}
+
+.buyButton {
+  width: auto;
+  height: 60%;
+  color: #FFF;
+  font-size: 1.2em;
+  border-radius: 3px;
+}
+
+.inStoreBtn {
+  background-color: #000000;
+}
+
+.inStore {
+  height: 10%;
+  margin-top: .2em;
+}
+
+.cartBtn {
+  background-color: #C33A1D;
+}
+
+.returns {
+  width: 100%;
+  height: 4em;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  color: #BEBEBE;
+  /* background-color: tomato; */
+}
+
+.returnsTitle {
+  font-size: 1.2em;
+  margin-right: .4em;
+}
+
+.returnsText {
+  height: 50%;
+  font-size: .8em;
+  padding-left: .4em;
 }
