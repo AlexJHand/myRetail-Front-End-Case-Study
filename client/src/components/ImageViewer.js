@@ -1,7 +1,8 @@
 import React from 'react';
 
+import ImageCarousel from './ImageCarousel';
+import ImageZoom from './ImageZoom';
 import MainImage from './MainImage';
-import SubImage from './SubImage';
 
 export default class ImageViewer extends React.Component {
     constructor(props) {
@@ -96,13 +97,17 @@ export default class ImageViewer extends React.Component {
     render() {
         if (this.state.imageArray) {
             return (
-                <div>
+                <div className="imageViewer">
                     <MainImage image={this.state.selectedImage} title={this.props.title}/>
-                    <div onClick={this.selectLeft}>&#x3008;</div>
-                    <SubImage image={this.state.subImage1} title={this.props.title} onClick={this.selectLeft}/>
-                    <SubImage image={this.state.subImage2} title={this.props.title} />
-                    <SubImage image={this.state.subImage3} title={this.props.title} onClick={this.selectRight}/>
-                    <div onClick={this.selectRight}>&#x3009;</div>
+                    <ImageZoom />
+                    <ImageCarousel 
+                        onClickLeft={this.selectLeft}
+                        onClickRight={this.selectRight}
+                        subImage1={this.state.subImage1}
+                        subImage2={this.state.subImage2}
+                        subImage3={this.state.subImage3}
+                        title={this.props.title}
+                    />
                 </div>
             )
         } else {

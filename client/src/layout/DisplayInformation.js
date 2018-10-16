@@ -7,7 +7,7 @@ export default class DisplayInformation extends React.Component {
     
     render() {
         return (
-            <div className="DisplayInformation">
+            <div className="displayInformation">
                 <ProductName title={this.props.title} />
                 <ImageViewer images={this.props.images} title={this.props.title} />
             </div>
