@@ -99,9 +99,9 @@ export default class ImageViewer extends React.Component {
                 <div>
                     <MainImage image={this.state.selectedImage} title={this.props.title}/>
                     <div onClick={this.selectLeft}>&#x3008;</div>
-                    <SubImage image={this.state.subImage1} title={this.props.title} />
+                    <SubImage image={this.state.subImage1} title={this.props.title} onClick={this.selectLeft}/>
                     <SubImage image={this.state.subImage2} title={this.props.title} />
-                    <SubImage image={this.state.subImage3} title={this.props.title} />
+                    <SubImage image={this.state.subImage3} title={this.props.title} onClick={this.selectRight}/>
                     <div onClick={this.selectRight}>&#x3009;</div>
                 </div>
             )
