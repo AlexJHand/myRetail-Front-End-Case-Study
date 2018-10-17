@@ -1,4 +1,5 @@
 /* 
+  Blue color: #649BD7
   Gray color: #BEBEBE
   Dark gray: #8C8C8C
   Light Gray color: #F0F0F0
@@ -10,11 +11,10 @@
   Helvetica,
   Arial,
   sans-serif;
-}
+} 
 
-.vl {
-  border-left: 1px solid;
-  height: 80%;
+hr {
+  color: #BEBEBE;
 }
 
 .itemPage {
@@ -308,4 +308,128 @@ ProductInformation Section
 
 .productHighlightsItem>strong {
   font-weight: 400;
+}
+
+/* 
+//////////////////////////
+Reviews Section
+//////////////////////////
+*/
+
+.reviews {
+  width: 38%;
+  /* margin: 5%; */
+  margin-left: 2%;
+  padding: 3%;
+  /* background-color: green; */
+  /* text-align: center; */
+  float: left;
+}
+
+.reviewsHeader {
+  width: 100%;
+  height: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-size: 1em;
+  font-weight: 600;
+  /* background-color: green; */
+}
+
+.reviewsOverallScore {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  /* background-color: tomato; */
+}
+
+.reviewsOverallStars {
+  font-size: 1.5em;
+  margin-right: .5em;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  /* margin-top: .5em; */
+  /* background-color: green; */
+}
+
+.reviewStarEmpty {
+  color: #8C8C8C;
+}
+
+.reviewStarFilled {
+  color: #C33A1D;
+}
+
+.reviewsBox {
+  width: 100%;
+  /* height: 60em; */
+  display: block;
+  overflow: auto;
+  background-color: #F0F0F0;
+}
+
+.reviewsTitle {
+  width: 100%;
+  /* display: block;
+  overflow: auto; */
+  display: flex;
+  flex-direction: row;
+}
+
+.reviewsBoxTitle {
+  width: 45%;
+  margin: 2%;
+  /* font-size: .8em; */
+  /* font-weight: 300; */
+}
+
+.previewsBoxTitleHeader {
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: .2em;
+  margin-bottom: .1em;
+}
+
+.previewsBoxTitleText {
+  font-size: .9em;
+  font-weight: 360;
+  margin-top: .1em;
+  margin-bottom: .1em;
+}
+
+.reviewsHR {
+  width: 95%;
+}
+
+.reviewsBody {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.topReview {
+  width: 45%;
+  margin: 2%;
+}
+
+.topReviewTitle {
+  font-weight: 600;
+}
+
+.topReviewText {
+  font-size: .9em;
+  font-weight: 360;
+  margin-bottom: 1em;
+}
+
+.topReviewSignature {
+  font-size: .9em;
+  font-weight: 360;
+}
+
+.screenName {
+  color: #649BD7;
 }

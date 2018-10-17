@@ -6,7 +6,7 @@ export default class ImageZoom extends React.Component {
             <div className="imageZoom">
                 <i className="fas fa-search-plus imageZoomIcon"></i>
                 {/* <span className="vl" /> */}
-                <p className="imageZoomText vl">view larger</p>
+                <p className="imageZoomText">view larger</p>
             </div>
         )
     }

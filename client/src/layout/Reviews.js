@@ -22,61 +22,61 @@ export default class Reviews extends React.Component {
             case("1"):
                 return (
                     <div>
-                        <i className="fas fa-star reviewStarFilled"></i>
-                        <i className="fas fa-star reviewStarEmpty"></i>
-                        <i className="fas fa-star reviewStarEmpty"></i>
-                        <i className="fas fa-star reviewStarEmpty"></i>
-                        <i className="fas fa-star reviewStarEmpty"></i>
+                        <span className="reviewStarFilled">&#x2605;</span>
+                        <span className="reviewStarEmpty">&#x2605;</span>
+                        <span className="reviewStarEmpty">&#x2605;</span>
+                        <span className="reviewStarEmpty">&#x2605;</span>
+                        <span className="reviewStarEmpty">&#x2605;</span>
                     </div>
                 )
             case ("2"):
                 return (
                     <div>
-                        <i className="fas fa-star reviewStarFilled"></i>
-                        <i className="fas fa-star reviewStarFilled"></i>
-                        <i className="fas fa-star reviewStarEmpty"></i>
-                        <i className="fas fa-star reviewStarEmpty"></i>
-                        <i className="fas fa-star reviewStarEmpty"></i>
+                        <span className="reviewStarFilled">&#x2605;</span>
+                        <span className="reviewStarFilled">&#x2605;</span>
+                        <span className="reviewStarEmpty">&#x2605;</span>
+                        <span className="reviewStarEmpty">&#x2605;</span>
+                        <span className="reviewStarEmpty">&#x2605;</span>
                     </div>
                 )
             case ("3"):
                 return (
                     <div>
-                        <i className="fas fa-star reviewStarFilled"></i>
-                        <i className="fas fa-star reviewStarFilled"></i>
-                        <i className="fas fa-star reviewStarFilled"></i>
-                        <i className="fas fa-star reviewStarEmpty"></i>
-                        <i className="fas fa-star reviewStarEmpty"></i>
+                        <span className="reviewStarFilled">&#x2605;</span>
+                        <span className="reviewStarFilled">&#x2605;</span>
+                        <span className="reviewStarFilled">&#x2605;</span>
+                        <span className="reviewStarEmpty">&#x2605;</span>
+                        <span className="reviewStarEmpty">&#x2605;</span>
                     </div>
                 )
             case ("4"):
                 return (
                     <div>
-                        <i className="fas fa-star reviewStarFilled"></i>
-                        <i className="fas fa-star reviewStarFilled"></i>
-                        <i className="fas fa-star reviewStarFilled"></i>
-                        <i className="fas fa-star reviewStarFilled"></i>
-                        <i className="fas fa-star reviewStarEmpty"></i>
+                        <span className="reviewStarFilled">&#x2605;</span>
+                        <span className="reviewStarFilled">&#x2605;</span>
+                        <span className="reviewStarFilled">&#x2605;</span>
+                        <span className="reviewStarFilled">&#x2605;</span>
+                        <span className="reviewStarEmpty">&#x2605;</span>
                     </div>
                 )
             case ("5"):
                 return (
                     <div>
-                        <i className="fas fa-star reviewStarFilled"></i>
-                        <i className="fas fa-star reviewStarFilled"></i>
-                        <i className="fas fa-star reviewStarFilled"></i>
-                        <i className="fas fa-star reviewStarFilled"></i>
-                        <i className="fas fa-star reviewStarFilled"></i>
+                        <span className="reviewStarFilled">&#x2605;</span>
+                        <span className="reviewStarFilled">&#x2605;</span>
+                        <span className="reviewStarFilled">&#x2605;</span>
+                        <span className="reviewStarFilled">&#x2605;</span>
+                        <span className="reviewStarFilled">&#x2605;</span>
                     </div>
                 )
             default: 
                 return (
                     <div>
-                        <i className="fas fa-star reviewStarEmpty"></i>
-                        <i className="fas fa-star reviewStarEmpty"></i>
-                        <i className="fas fa-star reviewStarEmpty"></i>
-                        <i className="fas fa-star reviewStarEmpty"></i>
-                        <i className="fas fa-star reviewStarEmpty"></i>
+                        <span className="reviewStarEmpty">&#x2605;</span>
+                        <span className="reviewStarEmpty">&#x2605;</span>
+                        <span className="reviewStarEmpty">&#x2605;</span>
+                        <span className="reviewStarEmpty">&#x2605;</span>
+                        <span className="reviewStarEmpty">&#x2605;</span>
                     </div>
                 )
         }

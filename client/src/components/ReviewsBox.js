@@ -6,11 +6,14 @@ import TopReview from './TopReview';
 const ReviewsBox = (props) =>
     <div className="reviewsBox">
         <div className="reviewsTitle">
-            <ReviewsBoxTitle className="proReviewTitle" reviewScores="4-5" title="PRO"/>
-            <ReviewsBoxTitle className="conReviewTitle" reviewScores="1-2" title="CON"/>
+            <ReviewsBoxTitle className="reviewsBoxTitle proReviewTitle" reviewScores="4-5" title="PRO"/>
+            <ReviewsBoxTitle className="reviewsBoxTitle conReviewTitle" reviewScores="1-2" title="CON"/>
         </div>
-        <TopReview review={props.proReview} buildStars={props.buildStars} proStars={props.proStars}/>
-        <TopReview review={props.conReview} buildStars={props.buildStars} proStars={props.conStars} />
+        <hr className="reviewsHR"/>
+        <div className="reviewsBody">
+            <TopReview review={props.proReview} buildStars={props.buildStars} proStars={props.proStars}/>
+            <TopReview review={props.conReview} buildStars={props.buildStars} proStars={props.conStars} />
+        </div>
     </div>
 
 export default ReviewsBox;
