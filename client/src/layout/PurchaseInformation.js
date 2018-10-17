@@ -62,7 +62,7 @@ export default class PurchaseInformation extends React.Component {
 
     render() {
         return (
-            <div className="purchaseInformation">
+            <div className="layoutItem purchaseInformation">
                 <div className="priceBox">
                     <h3 className="priceNumber">{this.props.price.formattedPriceValue}</h3>
                     <span className="priceQualifier">{this.props.price.priceQualifier}</span>

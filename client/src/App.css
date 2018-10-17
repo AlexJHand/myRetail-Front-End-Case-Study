@@ -51,6 +51,7 @@ DisplayInformation Section
 }
 
 .mainImage {
+  width: 100%;
   margin-bottom: 1em;
 }
 
@@ -239,6 +240,7 @@ PurchaseInformation Section
   /* justify-content: center; */
   align-items: center;
   color: #8C8C8C;
+  margin-bottom: 1em;
   /* background-color: tomato; */
 }
 
@@ -432,4 +434,33 @@ Reviews Section
 
 .screenName {
   color: #649BD7;
+}
+
+
+/* 
+//////////////////////////
+Mobile Responsive Section
+//////////////////////////
+*/
+
+@media only screen and (max-width : 400px) {
+  .layoutItem {
+    width: 100%;
+    float: none;
+  }
+  /* .purchaseInformation
+  .productInformation 
+  .reviews {
+    width: 100%;
+    float: none;
+  } */
+
+  /* .returns {
+    display: block;
+    overflow: auto;
+  } */
+
+  .shareButton {
+    font-size: .9em;
+  }
 }

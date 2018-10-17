@@ -97,7 +97,7 @@ export default class Reviews extends React.Component {
 
     render() {
         return (
-            <div className="reviews">
+            <div className="layoutItem reviews">
                 <ReviewsHeader 
                     buildStars={this.createStars} 
                     totalStars={this.state.totalStars} 

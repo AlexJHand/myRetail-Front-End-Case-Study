@@ -4,7 +4,7 @@ export default class ProductInformation extends React.Component {
 
     render() {
         return (
-            <div className="productInformation">
+            <div className="layoutItem productInformation">
                 <h3 className="productHighlightsTitle">product highlights</h3>
                 <ul className="productHighlightsList">
                     {this.props.features.map(function(feature, index) {
