@@ -4,11 +4,14 @@ export default class ProductInformation extends React.Component {
 
     render() {
         return (
-            <div>
-                <h3>product highlights</h3>
-                <ul>
+            <div className="productInformation">
+                <h3 className="productHighlightsTitle">product highlights</h3>
+                <ul className="productHighlightsList">
                     {this.props.features.map(function(feature, index) {
-                        return <li dangerouslySetInnerHTML={{__html: feature}} key={index}></li>
+                        return <li className="productHighlightsItem" 
+                                    dangerouslySetInnerHTML={{__html: feature}} 
+                                    key={index}>
+                                </li>
                     })}
                 </ul>
             </div>

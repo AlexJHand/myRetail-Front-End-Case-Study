@@ -76,9 +76,11 @@ export default class PurchaseInformation extends React.Component {
                 <QuantityBox quantity={this.state.quantity} onClick={this.handleChange} />
                 {this.displayButtons()}
                 <Returns />
-                <button type="button" className="registryBtn">Add To Registry</button>
-                <button type="button" className="listBtn">Add To List</button>
-                <button type="button" className="shareBtn">Add To Share</button>
+                <div className="shareButtonsBox">
+                    <div className="shareButton"><span className="shareButton">ADD TO REGISTRY</span></div>
+                    <div className="shareButton"><span className="shareButton">ADD TO LIST</span></div>
+                    <div className="shareButton"><span className="shareButton">SHARE</span></div>
+                </div>
             </div>
         )
     }
