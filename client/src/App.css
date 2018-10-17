@@ -194,11 +194,13 @@ PurchaseInformation Section
   height: 60%;
   color: #FFF;
   font-size: 1.2em;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 .inStoreBtn {
-  background-color: #000000;
+  /* background-color: #000000; */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 1) 100%);
+  box-shadow: inset 0px 2px 1px rgba(0, 0, 0, 0.7);
 }
 
 .inStore {
@@ -208,7 +210,9 @@ PurchaseInformation Section
 }
 
 .cartBtn {
-  background-color: #C33A1D;
+  /* background-color: #C33A1D; */
+  background: -webkit-linear-gradient(top, rgba(195, 58, 29, 0.6) 0%, rgba(195, 58, 29, 1) 100%);
+  box-shadow: inset 0px 2px 1px rgba(255, 255, 255, 0.7);
 }
 
 .returns {
