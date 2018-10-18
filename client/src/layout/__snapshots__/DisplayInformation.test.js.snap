@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="layoutItem displayInformation"
+>
+  <ProductName
+    title="Ninja™ Professional Blender with Single Serve Blending Cups"
+  />
+  <ImageViewer
+    images={
+      Array [
+        "0",
+      ]
+    }
+    title="Ninja™ Professional Blender with Single Serve Blending Cups"
+  />
+</div>
+`;
