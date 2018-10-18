@@ -73,7 +73,7 @@ export default class PurchaseInformation extends React.Component {
                     <Promotion description={this.props.promotions[1].Description[0].shortDescription}/>
                 </div>
                 <hr />
-                <QuantityBox quantity={this.state.quantity} onClick={this.handleChange} />
+                <QuantityBox quantity={this.state.quantity} onClick={this.handleChange}/>
                 {this.displayButtons()}
                 <Returns />
                 <div className="shareButtonsBox">
